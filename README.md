@@ -192,7 +192,7 @@ Experience in full-stack integration with React and Django
 
 Practical knowledge of vector databases for real-world text retrieval
 
- Future Improvements
+# Future Improvements
 
 Add multi-language content support
 
