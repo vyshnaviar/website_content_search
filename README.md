@@ -25,6 +25,8 @@ This project is a full-stack web application that allows users to search and ret
 - Milvus (for embedding-based searches)
 
 ---
+<img width="1920" height="887" alt="image" src="https://github.com/user-attachments/assets/84b8d028-2745-4bae-b67a-fa117d09120a" />
+
 
 ## Setup Instructions
 
