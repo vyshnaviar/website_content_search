@@ -194,13 +194,9 @@ Practical knowledge of vector databases for real-world text retrieval
 
 # Future Improvements
 
-Add multi-language content support
+Implementing persistent storage for the Milvus collection would be a great step, preventing the need for re-indexing with every search
+Deploying the entire system on a cloud infrastructure to achieve scalable, production-ready performance that can handle anything thrown its wa
 
-Implement query caching and faster embedding storage
-
-Integrate AI summarization of search results
-
-Deploy project to cloud (AWS / Render / Vercel)
 
 Author
 
