@@ -1,84 +1,184 @@
-# Website Content Search
+Website Content Semantic Search
 
-## Description
-This project is a full-stack web application that allows users to search and retrieve website content.  
-- **Backend:** Django + Django REST Framework  
-- **Frontend:** React  
-- **Vector Database:** Milvus (optional, for embedding-based search)
+A full-stack web application to fetch website content, split into chunks, and perform semantic search using a vector database (Milvus). Users can input a URL and a search query to retrieve the most relevant chunks of content from the website.
 
----
+Table of Contents
 
-## Prerequisites
+Project Overview
 
-### Backend
-- Python 3.10 or higher
-- Django 5.2.7
-- Django REST Framework
-- PostgreSQL (or another supported database)
+Features
 
-### Frontend
-- Node.js 18 or higher
-- npm or yarn
+Prerequisites
 
-### Vector Database (Optional)
-- Docker
-- Milvus (for embedding-based searches)
+Backend Setup
 
----
-<img width="1920" height="887" alt="image" src="https://github.com/user-attachments/assets/84b8d028-2745-4bae-b67a-fa117d09120a" />
+Frontend Setup
 
+Milvus Vector Database Setup
 
-## Setup Instructions
+Running the Application
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/vyshnaviar/Assignment.git
-cd Assignment
+Additional Notes
 
-### 2. Backend Setup
+Project Overview
+
+This project allows users to:
+
+Input a website URL.
+
+Fetch HTML content and split it into manageable chunks.
+
+Encode chunks using a SentenceTransformer model for semantic embeddings.
+
+Store embeddings in Milvus vector database.
+
+Perform semantic search to retrieve content most relevant to a user query.
+
+Display results with content, relevance score, token count, and raw HTML DOM.
+
+Features
+
+Semantic search powered by sentence-transformers embeddings.
+
+Tokenization and chunking of large website content.
+
+Vector storage and search with Milvus v2.6.4.
+
+React frontend with clean UI and interactive input boxes.
+
+Relevance scores in percentage format.
+
+HTML DOM display for deeper insights into website structure.
+
+Prerequisites
+
+Docker & Docker Compose: Install Docker
+
+Python 3.10+
+
+Node.js & npm or Yarn
+
+Git
+
+Internet connection (for fetching website data and installing packages)
+
+Backend Setup
+
+Navigate to the backend directory:
+
 cd backend
 
-# Create a virtual environment
-python -m venv venv
 
-# Activate the virtual environment
-# Windows:
+Create and activate a Python virtual environment:
+
+python -m venv venv
+# Windows
 venv\Scripts\activate
-# macOS/Linux:
+# Linux / macOS
 source venv/bin/activate
 
-# Install dependencies
+
+Install dependencies:
+
 pip install -r requirements.txt
 
-# Run database migrations
-python manage.py migrate
 
-# Start the backend server
+Run the Django development server:
+
 python manage.py runserver
-Backend runs on: http://localhost:8000
-3. Frontend Setup
+
+
+Backend API endpoints:
+
+POST /api/add-url/ – Add website URL to database.
+
+POST /api/search/ – Search for a query in a website’s content.
+
+GET /api/health/ – Check API and Milvus status.
+
+Frontend Setup
+
+Navigate to the frontend directory:
+
 cd frontend
 
-# Install dependencies
-npm install
 
-# Start the frontend development server
+Install dependencies:
+
+npm install
+# or
+yarn install
+
+
+Start the React development server:
+
+npm start
+# or
+yarn start
+
+
+Frontend URL: http://localhost:3000
+
+Milvus Vector Database Setup
+
+Ensure Docker and Docker Compose are installed.
+
+Navigate to your project root containing docker-compose.yml.
+
+Start Milvus with Docker Compose:
+
+docker-compose up -d
+
+
+Check running containers:
+
+docker-compose ps
+
+
+Expected services:
+
+milvus-standalone – Milvus vector database.
+
+milvus-minio – Object storage.
+
+milvus-etcd – Metadata store.
+
+Health check:
+
+docker-compose logs -f milvus-standalone
+
+Running the Application
+
+Start Milvus (vector database):
+
+docker-compose up -d
+
+
+Start backend:
+
+cd backend
+venv\Scripts\activate  # Activate virtual environment
+python manage.py runserver
+
+
+Start frontend:
+
+cd frontend
 npm start
 
-Frontend runs on: http://localhost:3000
 
-## install milvus inside docker
-Step 1: Make sure Docker Desktop is running
+Open browser at http://localhost:3000 and start searching websites!
 
-Open Docker Desktop → check “Docker Engine is running”
-In Command Prompt, verify:
+Additional Notes
 
-docker --version
-docker ps
+Ensure Milvus is running before using the backend API.
 
-If these work, Docker is ready 
-#Install Milvus Python client in backend environment:
+Relevance scores are displayed as percentages (0–100%) for easier interpretation.
 
-pip install pymilvus
+Maximum HTML chunk length and token chunk size can be configured in views.py.
 
+Use a stable internet connection to fetch website content.
 
+Use Ctrl + C in the terminal to stop backend or Milvus services.
+
+Docker cleanup:
