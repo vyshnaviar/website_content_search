@@ -1,7 +1,8 @@
-******Website Content Search******
-🧩 Description
+******# Website Content Search******
 
 Website Content Search is a full-stack web application that allows users to input a website URL and a search query to find the most relevant content chunks from that site.
+<img width="1855" height="879" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/b060cd28-4b3a-435a-bb7c-56a2e29147e1" />
+
 
 It combines:
 
@@ -11,8 +12,8 @@ Backend: Django + Django REST Framework (handles HTML parsing, tokenization, and
 
 Optional Integration: Vector database (e.g., Milvus, Pinecone, or Weaviate) for embedding-based semantic search
 
-⚙️ Prerequisites
-🖥️ Backend
+      **Prerequisites**
+# Backend
 
 Python 3.10+
 
@@ -24,7 +25,7 @@ PostgreSQL (or SQLite for local testing)
 
 (Optional) Vector Database – Milvus, Pinecone, or Weaviate
 
-💻 Frontend
+# Frontend
 
 Node.js 18+
 
@@ -77,7 +78,7 @@ Frontend will be available at:
 
 Milvus is used as a vector database to store and retrieve text embeddings for semantic search.
 
-Prerequisites
+# Prerequisites
 
 Docker
 
@@ -124,7 +125,7 @@ Milvus standalone ready to serve
 
 Once running, the backend can connect automatically to perform semantic embedding searches.
 
-🧠 Project Workflow
+#  Project Workflow
 
 User enters:
 
@@ -150,14 +151,14 @@ Relevance score (e.g., 81.52% match)
 
 Raw HTML snippet (optional)
 
-🧰 Tech Stack
+# Tech Stack
 Layer	Technology
 Frontend	React, HTML5, CSS3
 Backend	Django, Django REST Framework
 Database	PostgreSQL
 Vector Database	Milvus (Docker-based)
 Others	Fetch API, JSON, Python Embedding Models
-📽️ Walkthrough Video (Recommended for Submission)
+Walkthrough Video (Recommended for Submission)
 
 Create a short 5–10 minute demo video covering:
 
@@ -173,7 +174,7 @@ Vector database setup and connection
 
 Codebase structure and file explanation
 
-🧩 Challenges Faced
+# Challenges Faced
 
 Handling inconsistent HTML structure from various websites
 
@@ -183,7 +184,7 @@ Balancing performance and relevance when embedding content
 
 Managing CORS and cross-origin issues between backend and frontend
 
-💡 Lessons Learned
+# Lessons Learned
 
 Improved understanding of semantic search systems
 
@@ -191,7 +192,7 @@ Experience in full-stack integration with React and Django
 
 Practical knowledge of vector databases for real-world text retrieval
 
-🚀 Future Improvements
+ Future Improvements
 
 Add multi-language content support
 
@@ -201,7 +202,7 @@ Integrate AI summarization of search results
 
 Deploy project to cloud (AWS / Render / Vercel)
 
-👩‍💻 Author
+Author
 
 Vyshnavi A R
-📧 vyshnaviar830@gmail.com
+vyshnaviar830@gmail.com
