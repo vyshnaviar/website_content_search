@@ -1,4 +1,4 @@
- **Website Content Search**
+******Website Content Search******
 🧩 Description
 
 Website Content Search is a full-stack web application that allows users to input a website URL and a search query to find the most relevant content chunks from that site.
@@ -150,7 +150,7 @@ Relevance score (e.g., 81.52% match)
 
 Raw HTML snippet (optional)
 
-** Tech Stack**
+🧰 Tech Stack
 Layer	Technology
 Frontend	React, HTML5, CSS3
 Backend	Django, Django REST Framework
@@ -183,7 +183,7 @@ Balancing performance and relevance when embedding content
 
 Managing CORS and cross-origin issues between backend and frontend
 
-💡** Lessons Learned**
+💡 Lessons Learned
 
 Improved understanding of semantic search systems
 
@@ -191,7 +191,7 @@ Experience in full-stack integration with React and Django
 
 Practical knowledge of vector databases for real-world text retrieval
 
- **Future Improvements**
+🚀 Future Improvements
 
 Add multi-language content support
 
@@ -201,7 +201,7 @@ Integrate AI summarization of search results
 
 Deploy project to cloud (AWS / Render / Vercel)
 
- Author
+👩‍💻 Author
 
 Vyshnavi A R
 📧 vyshnaviar830@gmail.com
