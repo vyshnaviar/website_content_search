@@ -29,38 +29,3 @@ This is a full-stack web application that allows users to search and retrieve we
 ```bash
 git clone https://github.com/vyshnaviar/Assignment.git
 cd Assignment
-2. Backend Setup
-bash
-Copy code
-cd backend
-# Create virtual environment
-python -m venv venv
-
-# Activate virtual environment
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run migrations
-python manage.py migrate
-
-# Start backend server
-python manage.py runserver
-Backend runs on: http://localhost:8000
-
-3. Frontend Setup
-bash
-Copy code
-cd frontend
-
-# Install dependencies
-npm install
-
-# Start frontend development server
-npm start
-Frontend runs on: http://localhost:3000
-
