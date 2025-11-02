@@ -65,4 +65,32 @@ npm install
 npm start
 Frontend runs on: http://localhost:3000
 
+### 4.Milvus Vector Database Setup
+
+Ensure Docker and Docker Compose are installed.
+
+Navigate to your project root containing docker-compose.yml.
+
+Start Milvus with Docker Compose:
+
+docker-compose up -d
+
+
+Check running containers:
+
+docker-compose ps
+
+
+#Expected services:
+
+milvus-standalone – Milvus vector database.
+
+milvus-minio – Object storage.
+
+milvus-etcd – Metadata store.
+
+##Health check:
+
+docker-compose logs -f milvus-standalone
+
 
