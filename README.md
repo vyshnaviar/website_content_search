@@ -15,11 +15,11 @@ Optional Integration: Vector database (e.g., Milvus, Pinecone, or Weaviate) for 
    
 # Backend
 
-** Python 3.10+**
+**Python 3.10+**
 
-** Django 5.2.7 **
+**Django 5.2.7**
 
-** Django REST Framework **
+**Django REST Framework**
 
 PostgreSQL (or SQLite for local testing)
 
@@ -27,9 +27,9 @@ PostgreSQL (or SQLite for local testing)
 
 # Frontend
 
-Node.js 18+
+**Node.js 18+**
 
-npm or yarn
+**npm start**
 
 🚀 Setup Instructions
 1️⃣ Clone the Repository
