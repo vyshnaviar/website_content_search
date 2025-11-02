@@ -12,14 +12,14 @@ Backend: Django + Django REST Framework (handles HTML parsing, tokenization, and
 
 Optional Integration: Vector database (e.g., Milvus, Pinecone, or Weaviate) for embedding-based semantic search
 
-      **Prerequisites**
+   
 # Backend
 
-Python 3.10+
+** Python 3.10+**
 
-Django 5.2.7
+** Django 5.2.7 **
 
-Django REST Framework
+** Django REST Framework **
 
 PostgreSQL (or SQLite for local testing)
 
@@ -78,7 +78,7 @@ Frontend will be available at:
 
 Milvus is used as a vector database to store and retrieve text embeddings for semantic search.
 
-# Prerequisites
+#  Prerequisites
 
 Docker
 
@@ -195,7 +195,7 @@ Practical knowledge of vector databases for real-world text retrieval
 # Future Improvements
 
 Implementing persistent storage for the Milvus collection would be a great step, preventing the need for re-indexing with every search
-Deploying the entire system on a cloud infrastructure to achieve scalable, production-ready performance that can handle anything thrown its wa
+Deploying the entire system on a cloud infrastructure to achieve scalable, production-ready performance that can handle anything thrown its way.
 
 
 Author
