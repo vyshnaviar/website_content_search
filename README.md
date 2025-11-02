@@ -1,7 +1,7 @@
 ## Website Content Search
 
 Website Content Search is a full-stack web application that allows users to input a website URL and a search query to find the most relevant content chunks from that site.
-![Uploading image.png…]()
+<img width="722" height="451" alt="image" src="https://github.com/user-attachments/assets/8fe3e7bf-e0cc-41ab-b8e1-ecc2d968e78c" />
 
 Slide Deck: https://docs.google.com/presentation/d/1Gmg8cNgQB4K7ATQZKg37Z5Z8lnWkrZhz/edit?slide=id.p1#slide=id.p1
 
